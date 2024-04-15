@@ -1,0 +1,159 @@
+*{
+    font-family: 'Lato';
+}
+
+.body {
+  background-color: black;
+  background-image: url(assets/img/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato';
+}
+
+.childBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#label_nova_tarefa  {
+  width:auto;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 25px !important; 
+}
+
+.inputText {
+  width: 490px;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  margin-left: 22px;
+  background: #fff;
+  height: 50px;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 20px;
+
+
+}
+
+.btn_generic {
+  width: 10%;
+  color: white;
+  padding: 5px 5px;
+  margin: 2px 2px;
+  width: 55px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_novo {
+  background-color: #4CAF50;
+  position: relative;
+    left: -5px;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;  
+}
+
+.btn_novo:hover {
+  background: #06550b;
+}
+
+.btn_editar {
+  background-color: #f80492;
+  
+}
+
+.btn_editar:hover {
+  background-color: #620b65;
+}
+
+.btn_deletar {
+  background-color: #bc0e0e;
+}
+
+.btn_deletar:hover {
+  background-color: #f06565;
+}
+
+.styleCab {
+  background-color: #cabe94;
+}
+
+.styleOne {
+  background-color: #dac377;
+}
+
+.styleOne:hover {
+  background-color: rgb(181, 198, 216);
+}
+
+.styleTwo {
+  background-color: lightgrey;
+}
+
+.styleTwo:hover {
+  background-color: rgb(181, 198, 216);
+}
+
+div {
+  border-radius: 5px;
+  background-color: #1a1818;
+  padding: 20px;
+  color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+th {
+    border-radius: 15px;
+  border: 10px solid transparent;
+  text-align: left;
+  padding: 8px;
+  background-color: #343a40;
+
+}
+
+td{
+    border-radius: 15px;
+  border: 10px solid transparent;
+  text-align: left;
+  padding: 8px;
+  background-color: #6c757d;
+}
+
+.sa-button-container {
+    height: 60px !important;
+}
+
+.sweet-alert button {
+    background-color: whitesmoke;
+    margin: 2px 2px 0 5px !important;
+    padding: 5px 16px !important;
+}
+
+.sweet-alert button {
+    color: black !important;
+    border: 0;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin: 26px 5px 0 5px;
+    cursor: pointer;
+}
