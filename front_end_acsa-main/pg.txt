@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" >
+    <script src="script.js"></script>
+
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        </style>
+        
+</head>
+<body>
+    <header></header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Este é o meu portifólio em andamento
+                <strong class="titulo-destaque"> e pertence à Jullia Acsa!     
+                </strong></h1>
+                <p class="apresentacao__conteudo__texto">Estudante de Graduação em engenharia de software</p>
+
+            <div class="div_aplicacoes">
+                <strong class="aplicacoes"> Aplicações    
+                </strong></h1>
+                <p class="apresentacao__conteudo__texto"> Estudando desenvolvimento mobile em Dart e Flutter</p>
+            </div>
+
+                
+                    <div class="apresentacao__links">
+                        <a class="apresentacao__links__links" href="https://instagram.com/acsaa._">Instagram</a>
+                        <a class="apresentacao__links__links" href="https://github.com/jullia2402">GitHub</a>
+                        <a class="go_to_list" href="list.html">To do list</a>
+                    </div>
+            </section>
+            <img class="flor" src="assets/img/bl_Ju.jpg" alt="foto">
+        </main>
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Curitiba-PR</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: julliaacsa@gmail.com</p>
+          </div><br>
+          <p>Let's get in touch. Send me a message:</p>
+      
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+              <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </p>
+          </form>
+        <!-- End Contact Section -->
+        </div>
+        
+          <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity" href="https://instagram.com/acsaa._"></i>
+          <i class="fa fa-linkedin w3-hover-opacity" href="https://github.com/jullia2402"    ></i>
+        <!-- End footer -->
+        </footer>
+      
+      <!-- END PAGE CONTENT -->
+      </div>
+
+
+</body>
+<script src="script.js"></script>
+
+
