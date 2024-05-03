@@ -108,7 +108,7 @@
 
 div {
   border-radius: 5px;
-  background-color: #1a1818;
+  background-color: #272424;
   padding: 20px;
   color: white;
 }
@@ -146,7 +146,7 @@ td{
 }
 
 .sweet-alert button {
-    color: black !important;
+    color: rgb(235, 222, 222) !important;
     border: 0;
     box-shadow: none;
     font-size: 17px;
