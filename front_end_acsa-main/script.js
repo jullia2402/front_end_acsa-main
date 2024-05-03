@@ -13,7 +13,7 @@ class TarefaObj {
 window.onload = function () {
     listarTarefa();
 };
-
+//limpa o table 
 function listarTarefa() {
 
     const parent = document.getElementById("table");
@@ -73,7 +73,6 @@ function criaCabecalhoTable() {
 function criarElemento(objetoTarefa) {
     const taskId = `tarefa_id_${objetoTarefa.id}`;
 
-    // Create two new cells
     var cellTextoTarefa = document.createElement("td");
     cellTextoTarefa.id = taskId;
     cellTextoTarefa.innerHTML = objetoTarefa.descricao;
@@ -109,7 +108,7 @@ function criarElemento(objetoTarefa) {
         document.getElementById(idInputChecked).checked = true;
     }
 }
-
+//cria um elemento do tipo check box 
 function criaInputCheckBoxTarefa(taskId) {
     const inputTarefa = document.createElement('input');
     inputTarefa.id = `checkbox_${taskId}`;
@@ -131,20 +130,21 @@ function criaButtonGeneric(nome, className, funcao) {
 function addTask() {
     const novaTarefa = document.getElementById('input_nova_tarefa').value;
     if (novaTarefa == null || novaTarefa == '') {
-        swal('OPS!, Enter the task description.', {
+        swal('OPS!, escreva uma tarefa.', {
             button: {
                 text: "OK",
             },
         });
         return;
     }
-    const table = document.getElementById("table");
+    //criação da nova tarefa 
+   ; const table = document.getElementById("table");
     let quantidade = table.children.length;
     let objTarefa = new TarefaObj();
     objTarefa.id = quantidade;
     objTarefa.descricao = novaTarefa;
     objTarefa.status = false;
-    criaNovaTarefa(objTarefa, true);
+    criaNovaTarefa(objTarefa, true)
 };
 
 function criaNovaTarefa(objeto) {
@@ -158,7 +158,7 @@ function criaNovaTarefa(objeto) {
     }
 
     if (temItem) {
-        swal('Alert!', 'This task has already been registered.', "info");
+        swal('Alert!', 'Essa tarefa já está na lista', "info");
         return;
     }
 
@@ -171,7 +171,7 @@ function criaNovaTarefa(objeto) {
 
     var linhasTabela = document.getElementsByTagName("tr");
     for (var i = 0; i < linhasTabela.length; i++) {
-        if (i == 0) continue;// Não pinta o cabeçalho da tabela
+        if (i == 0) continue;
         if ((i) % 2 == 0) {
             linhasTabela[i].className = "styleOne";
         }
@@ -207,12 +207,10 @@ function mudaEstadoTarefa(taskId) {
 
 function modalEdicaoTarefa(taskId) {
     const taskSelected = document.getElementById(taskId).innerHTML;
-    //let tarefaAlterada = prompt('Changing task', taskSelected);
-    // Documentação do exemplo: https://sweetalert.js.org/guides/ AND https://sweetalert2.github.io/#examples
 
     for (var i = 0; i < tarefaArrayLista.length; i++) {
         if (tarefaArrayLista[i].descricao.trim() == taskSelected.trim() && tarefaArrayLista[i].status) {
-            swal('Attention!', 'This task has now been completed.', "warning");
+            swal('Attention!', 'essa tarefa já foi completa.', "warning");
             return;
         }
     }
@@ -267,7 +265,7 @@ function deletarTarefa(rowId, idTask) {
     const id = rowId.replace("row_id_", '');
     var rowDescri = document.getElementById(idTask).innerHTML;
     swal({
-        title: `Do you really want to delete this task: "${rowDescri}"?`,
+        title: `Você realmente deseja apagar essa tarefa?: "${rowDescri}"?`,
         icon: "info",
         buttons: ["Cancel", "Delete"],
         dangerMode: true,
@@ -278,7 +276,7 @@ function deletarTarefa(rowId, idTask) {
             tarefaArrayLista.splice(id, 1);
             localStorage.setItem('tasksList', JSON.stringify(tarefaArrayLista));
             listarTarefa();
-            swal("Task deleted successfully!", {
+            swal("deletado com sucesso!", {
                 icon: "warning",
                 timer: 2000,
             });
